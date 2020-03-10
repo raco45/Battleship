@@ -3,7 +3,7 @@ from clases import Usuario
 
 def nombre_de_usuario():
     contador= True
-    user=input(" Ingrese su nombre de usuario (en miniscula): ")
+    user=(input(" Ingrese su nombre de usuario (en miniscula): ")).strip()
     while contador==True:
         
         if " " in user or len(user) > 30 or not user.islower():
@@ -19,21 +19,21 @@ def nombre_de_usuario():
 def nombre_completo():
     resp=True
     while resp==True:
-        nombre= input(" por favor ingrese su nombre: ").strip()
+        nombre= (input(" por favor ingrese su nombre: ")).strip()
         
         if len(nombre) < 2 :
             print("no valido")
         else:
             resp=False
-    nombre2=input(" ingrese su segundo nombre (si tiene): ").strip()    
+    nombre2=(input(" ingrese su segundo nombre (si tiene): ")).strip()    
     resp2=True
     while resp2==True:
-        apellido= input(" ingrese su apellido: ")
+        apellido= (input(" ingrese su apellido: ")).strip()
         if len(apellido) < 2:
             print("muy corto")
         else:
             resp2=False
-    apellido2= input(" ingrese su segundo apellido (opcional): ").strip()
+    apellido2= (input(" ingrese su segundo apellido (opcional): ")).strip()
     Full_name=(" {} {} {} {}".format(nombre.title(),nombre2.title(),apellido.title(),apellido2.title()))
     return Full_name
 

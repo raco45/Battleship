@@ -42,7 +42,7 @@ O)))) O)) O))         O))     O))    O))         O))O))))))))O))))))))O))       
 Datos_de_usuario=[]
 resp=True
 while resp:
-    Entrada=input(" Si desea ingresar con su username presione 1 , en caso de no estar registrado presione 2: ")
+    Entrada=(input(" Si desea ingresar con su username presione 1 , en caso de no estar registrado presione 2: ")).strip()
     if Entrada=="1":
         user=nombre_de_usuario()
        
