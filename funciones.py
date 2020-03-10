@@ -102,7 +102,7 @@ def registrar_usuario(Datos_de_usuario):
     # Datos_de_usuario[username] ["Puntos"]= points
     nuevo_usuario= Usuario(username,name,age,gender,points)
     Datos_de_usuario.append(nuevo_usuario)
-    return Datos_de_usuario
+    return Datos_de_usuario,nuevo_usuario
 
 
 

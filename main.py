@@ -39,16 +39,33 @@ O)))) O)) O))         O))     O))    O))         O))O))))))))O))))))))O))       
 
 
 #MODULO 1 
-Datos_de_usuario=[]
 resp=True
+Datos_de_usuario=[] 
 while resp:
+    usernames=[]
+    for user in Datos_de_usuario:
+        usernames.append(user.nombre_de_usuario)
     Entrada=(input(" Si desea ingresar con su username presione 1 , en caso de no estar registrado presione 2: ")).strip()
     if Entrada=="1":
         user=nombre_de_usuario()
-       
-        if user not in Datos_de_usuario:
+        if user in usernames:
+            print("Bienvenido {}".format(user))
+            user_index= usernames.index(user)
+            user_objeto= Datos_de_usuario[user_index]
+            print("""  
+                    Nombre de usuario: {}
+                    Nombre del jugador: {}
+                    Edad: {}
+                    Genero: {}
+                    Puntos: {}""".format(user_objeto.nombre_de_usuario,user_objeto.nombre_completo,user_objeto.edad,user_objeto.genero, user_objeto.puntos_acumulados))
+            break       
+        if user not in usernames:
+            print("Usuario no registrado por favor registrese")
             Entrada="2"
     if Entrada== "2":
-        registrar_usuario(Datos_de_usuario)
+        Datos_de_usuario,user_objeto = registrar_usuario(Datos_de_usuario) 
+        break 
     
-    
+
+
+
