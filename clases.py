@@ -10,5 +10,32 @@ class Usuario:
         self.puntos_acumulados= puntos_acumulados
 
 
-xanth= Usuario("xanth","Andres",18, "Maculino", 1000)
-print(xanth.edad)
+#MODULO2 
+
+class Barco():
+
+    def __init__(self,longitud, coordenadas):
+        self.longitud= longitud
+        self.coordenadas= coordenadas
+    
+class Submarino(Barco):
+    def __init__(self,longitud,coordenadas):
+        Barco.__init__(self,longitud,coordenadas)
+    
+    def Sumergirse(self):
+        print("Tiene la capacidad de poder sumergirse y emerger del agua ")
+
+class Buque_2_pos(Barco):
+    def __init__(self,longitud,coordenadas):
+        Barco.__init__(self, longitud,coordenadas)
+   
+    def Comunicacion(self):
+        print("Tiene la capacidad de comunicarse con tierra y los otros miembros de la flota")
+
+class Buque_3_pos(Barco):
+    def __init__(self,longitud,coordenadas):
+        Barco.__init__(self,longitud,coordenadas) 
+    
+    def Transporte(self):
+        print("Cuenta con un helipuerto para el transporte de tropas")
+    

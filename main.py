@@ -65,7 +65,24 @@ while resp:
     if Entrada== "2":
         Datos_de_usuario,user_objeto = registrar_usuario(Datos_de_usuario) 
         break 
-    
 
+
+#MODULO 2 
+
+mapa=[
+    [ " " , "1" , "2" , "3" , "4" , "5" , "6" , "7" , "8" , "9" ,"10"],
+    [ "A", "O" , "O" , "O" , "O" , "O" , "O" , "O" , "O" , "O" , "O"],
+    [ "B", "O" , "O" , "O" , "O" , "O" , "O" , "O" , "O" , "O" , "O"],
+    [ "C", "O" , "O" , "O" , "O" , "O" , "O" , "O" , "O" , "O" , "O"],
+    [ "D", "O" , "O" , "O" , "O" , "O" , "O" , "O" , "O" , "O" , "O"],
+    [ "E", "O" , "O" , "O" , "O" , "O" , "O" , "O" , "O" , "O" , "O"],
+    [ "F", "O" , "O" , "O" , "O" , "O" , "O" , "O" , "O" , "O" , "O"],
+    [ "G", "O" , "O" , "O" , "O" , "O" , "O" , "O" , "O" , "O" , "O"],
+    [ "H", "O" , "O" , "O" , "O" , "O" , "O" , "O" , "O" , "O" , "O"],
+    [ "I", "O" , "O" , "O" , "O" , "O" , "O" , "O" , "O" , "O" , "O"],
+    [ "J", "O" , "O" , "O" , "O" , "O" , "O" , "O" , "O" , "O" , "O"],
+]
+for lista in mapa:
+    print(lista)
 
 
