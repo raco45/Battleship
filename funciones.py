@@ -325,8 +325,8 @@ while len(lista_barcos)<4:
 generar_buque_2_pos(lista_barcos,lista_ady,lista_buques_2) 
 generar_buque_3_pos(lista_barcos,lista_ady,lista_carguero)
 
-print(lista_barcos)
-print(lista_ady)
-print(lista_submarinos)
-print(lista_buques_2)
-print(lista_carguero)
+# print(lista_barcos)
+# print(lista_ady)
+# print(lista_submarinos)
+# print(lista_buques_2)
+# print(lista_carguero)
