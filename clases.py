@@ -2,13 +2,13 @@
 
 class Usuario:
 
-    def __init__(self, nombre_de_usuario, nombre_completo, edad, genero, puntos_acumulados):
+    def __init__(self, nombre_de_usuario, nombre_completo, edad, genero, puntos_acumulados,disparos):
         self.nombre_de_usuario= nombre_de_usuario
         self.nombre_completo= nombre_completo
         self.edad= edad
         self.genero= genero
         self.puntos_acumulados= puntos_acumulados
-
+        self.disparos = disparos
 
 #MODULO2 
 
