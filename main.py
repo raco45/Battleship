@@ -60,7 +60,7 @@ def main():
                 Datos_de_usuario.append(user_temp)
     except: 
         Datos_de_usuario=[]
-    try:                                         # Abrimos el arichivo promedio.txt donde se va a guardar la cantidad de partidas y las cantidad de disparos realizados.
+    try:                                         # Abrimos el archivo promedio.txt donde se va a guardar la cantidad de partidas y las cantidad de disparos realizados.
         with open("promedio.txt","r") as base_datos_text:
             for base_datos in base_datos_text:
                 juegos=int(base_datos.split(",")[0])
@@ -164,10 +164,10 @@ En caso de no estar registrado presione 2
                 repetidos=0
                 Puntos=0
                 print("""Para reallizar el disparo primero ingrese la letra en la fila que desea disparar y luego un numero en la columna que desea disparar:
-                Ej:
-                Fila: A
-                Columna: 7
-                Coordenada=A7
+Ej:
+Fila: A
+Columna: 7
+Coordenada=A7
                 """)
                 while len(lista_barcos)>0:
                     letra=input("Fila: ").strip()                                         
@@ -182,7 +182,7 @@ En caso de no estar registrado presione 2
                     resp=True
                     while resp:
                         disparo=lista_letras.index(letra)+1
-                        num=(input("Columna: "))
+                        num=(input("Columna: ")).strip()
                         if not num.isdigit():
                             print("Introduzca un numero")
                             continue       
@@ -224,10 +224,10 @@ En caso de no estar registrado presione 2
                 disparos_acum+=cont
                 juegos+=1                                                                 
                 if Puntos > int(user_objeto.puntos_acumulados):                  #Se actualiza la cantidad de puntos actuales por los obtenidos en la partida reciente;       
+                    user_objeto.disparos=cont
                     pos= Datos_de_usuario.index(user_objeto)                     # si la cantidad de puntos actuales es mayor a la cantidad de puntos obtenidos en la partida reciente     
                     user_objeto.puntos_acumulados= Puntos                        # entonces se mantendra la cantidad de puntos actuales, si este no es el caso los puntos obtenidos en la
                     Datos_de_usuario[pos]=user_objeto                            # la partida reciente se actualizaran como los nuevos puntos del usuario. 
-
                 print(" Felicidades has hundido la flota enemiga  ")
                 if cont ==9:
                     print("¿Eres un robot? lo que acabas de hacer es poco probabale...")

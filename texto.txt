@@ -1,1 +1,10 @@
-raco, Ricardo  Caceres ,19,Masculino,88,0
+sol, Solimar  Ortiz,56,Femenino,28,40
+benji, Benjamin  Sharifker, 60,Masculino,50,20
+robert, Roberto  Carrillo,45,Masculino,50,29
+xanth, Andres Eloy Betancourt,39,Masculino,62,23
+andrex, Andrea Rachel Gomez,19, Femenino,70,19
+maco, Manuel  Caceres,20,Masculino,80,14
+paz, Maria Paz Caceres,11,Femenino,86,11
+luigi, Luis Francisco Caceres Rodriguez,56,Masculino,88,10
+raco, Ricardo  Caceres ,19,Masculino,90,10
+dai, Dayana Andreina Gomez,19,Femenino,90,9
